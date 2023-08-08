@@ -10,7 +10,7 @@ reclame_tekst = (f"Vandaag in de aanbieding: aardbei-ijs, 1 liter – slechts �
 
 #print(reclame_tekst)
 
-reclame_tekst2 = (f"Vandaag in de aanbieding: aardbei-ijs, 1 liter – slechts € {aanbieding:.2f}")
+reclame_tekst2 = reclame_tekst[:63]
 
 #print(reclame_tekst2)
 
@@ -23,7 +23,7 @@ reclame_tekst4 = reclame_tekst3.split()
 #print(reclame_tekst4)
 
 for el in reclame_tekst4:
-    if len(el) >= 5:
+    if len(el) > 4:
         print(el.upper())
     else:
         print(el.lower())
